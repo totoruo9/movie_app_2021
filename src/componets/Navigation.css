@@ -1,0 +1,20 @@
+.navigation__wrap {
+    background-color: #fff;
+    position: fixed;
+    top:80px;
+    left:10px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 13px 27px -5px rgba(50, 50, 93, .25), 0 8px 16px -8px rgba(0, 0, 0, .3), 0 -6px 16px -6px rgba(0,0,0,.025);
+    border-radius: 5px;
+}
+
+.navigation__items {
+    text-decoration: none;
+    color: #2c2c2c;
+    padding: 20px;
+}
+
+.navigation__items:first-child {
+    border-bottom: 1px dashed #b2b3bc;
+}
