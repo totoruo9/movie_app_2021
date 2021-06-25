@@ -1,11 +1,19 @@
 import React from 'react';
+import axios from 'axios';
 
-function App() {
-  return (
-    <div>
-      <h1>Hello!</h1>
-    </div>
-  );
+class App extends React.Component {
+  state = {
+    isLoading: true,
+    movie: []
+  };
+  componentDidMount(){
+    axios.get("https://yts-proxy.now.sh/list_movies.json")
+  }
+
+  render(){
+    const {isLoading} = this.state;
+  return <div>{isLoading ? 'Loading...' : 'Start App'}</div>
+  }
 }
 
 export default App;
