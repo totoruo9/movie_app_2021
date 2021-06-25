@@ -1,3 +1,7 @@
+.movie {
+    text-decoration: none;
+}
+
 .movie img {
     position: relative;
     top: -50px;
